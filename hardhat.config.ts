@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "hardhat-watcher";
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -28,6 +29,19 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
+  },
+  watcher: {
+    ci: {
+      tasks: [
+        "clean",
+        { command: "compile", params: { quiet: true } },
+        {
+          command: "test",
+          params: { noCompile: true },
+        },
+      ],
+      files: ["./contracts", "./test"],
+    },
   },
 };
 

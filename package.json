@@ -6,14 +6,14 @@
   "private": true,
   "scripts": {
     "test": "cross-env TS_NODE_TRANSPILE_ONLY=1 hardhat test test/index.ts",
-    "clean": "rimraf artifacts/ cache/ coverage/ typechain/ coverage.json",
     "build": "cross-env TS_NODE_TRANSPILE_ONLY=1 yarn clean && hardhat compile",
     "deploy": "hardhat run scripts/deploy.ts",
     "format": "prettier --config ./.prettierrc.yaml --write \"**/*.{js,json,md,sol,ts}\"",
     "format:check": "prettier --config ./.prettierrc.yaml --check \"**/*.{js,json,md,sol,ts}\"",
     "lint": "yarn run lint:sol && yarn run lint:ts && yarn run format:check",
     "lint:sol": "solhint \"contracts/**/*.sol\"",
-    "lint:ts": "eslint --ext .js,.ts ."
+    "lint:ts": "eslint --ext .js,.ts .",
+    "ci": "yarn hardhat watch ci"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.6.4",
@@ -43,9 +43,9 @@
     "ethers": "^5.6.9",
     "hardhat": "^2.7.0",
     "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-watcher": "^2.3.0",
     "prettier": "^2.3.2",
     "prettier-plugin-solidity": "^1.0.0-beta.13",
-    "rimraf": "^3.0.2",
     "solhint": "^3.3.6",
     "solidity-coverage": "^0.7.21",
     "ts-node": "^10.1.0",
