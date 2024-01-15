@@ -2,8 +2,6 @@
   "name": "solidity-starter-kit",
   "version": "0.1.0",
   "main": "index.js",
-  "repository": "git@github.com:naomsa/hardhat-starter-kit.git",
-  "author": "Omar <omar@na2.com.br>",
   "license": "MIT",
   "private": true,
   "scripts": {
