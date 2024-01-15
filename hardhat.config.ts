@@ -9,11 +9,11 @@ dotenv.config();
 const config: HardhatUserConfig = {
   solidity: "0.8.15",
   networks: {
-    sepolia: {
-      url: process.env.RPC_URL_SEPOLIA || "",
+    goerli: {
+      url: process.env.RPC_URL_GOERLI || "",
       accounts:
-        process.env.PRIVATE_KEY_SEPOLIA !== undefined
-          ? [process.env.PRIVATE_KEY_SEPOLIA]
+        process.env.PRIVATE_KEY_GOERLI !== undefined
+          ? [process.env.PRIVATE_KEY_GOERLI]
           : [],
     },
     mainnet: {
