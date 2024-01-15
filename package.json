@@ -14,7 +14,8 @@
     "lint:sol": "solhint \"contracts/**/*.sol\"",
     "lint:ts": "eslint --ext .js,.ts .",
     "ci": "hardhat watch ci",
-    "docs": "hardhat dodoc"
+    "docs": "hardhat dodoc",
+    "clean": "hardhat clean"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.6.4",

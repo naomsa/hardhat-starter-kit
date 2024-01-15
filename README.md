@@ -9,22 +9,37 @@ To start, click on the green **use this template** button on the top bar and sta
 ### test
 
 > `yarn test`
-> Run all tests specified on the test/ folder.
+> Run all tests specified in the test/ folder.
 
 ### build
 
 > `yarn build`
-> Generate all artifacts and types in order to build/deploy upon your project.
+> Generate all contract's artifacts and types.
 
 ### lint
 
-> `yarn lint`
-> Fix all code issues on your contracts and scripts.
+> `yarn deploy`
+> Deploy all contracts specified in the deploy/ folder.
 
 ### format
 
 > `yarn format`
-> Fix the whole style of your codebase.
+> Run prettier to format all the code.
+
+### lint
+
+> `yarn lint`
+> Fix all code issues in contracts, tests and scripts.
+
+### ci
+
+> `yarn ci`
+> Trigger a watcher for your tests and contracts to clean, build and test on the run.
+
+### docs
+
+> `yarn docs`
+> Generate markdown docs for your contracts.
 
 ### clean
 
@@ -39,18 +54,14 @@ This template uses the root folder as the base path and contains folders such as
 
 This is where you should put all your **.sol** files.
 
-### 💻 scripts/
-
-This is the folder where you can put deploy, upgrade or any other type of scripts related to your contracts.
-
-### 🧪 test/
+### 🧪 tests/
 
 This is where you should put all your test files.
 
-### ⏰ tasks/
+### 🚀 deploy/
 
-This is where all hardhat tasks live. They run scripts throught the command line with argument input.
+The folder where all your deploy scripts should live.
 
 ---
 
-**Made by 🤖 for 👽 | 🔬 naomsa.eth**
+**🤖 Made by bots | 🔬 naomsa.eth**
