@@ -8,7 +8,7 @@
     "test:gas": "cross-env REPORT_GAS=true yarn test",
     "clean": "shx rm -rf artifacts/ cache/ coverage/ typechain/ coverage.json",
     "build": "cross-env TS_NODE_TRANSPILE_ONLY=1 yarn clean && hardhat compile",
-    "deploy": "hardhat deploy:greeter",
+    "deploy": "hardhat run scripts/deploy.ts",
     "format": "prettier --config ./.prettierrc.yaml --write \"**/*.{js,json,md,sol,ts}\"",
     "format:check": "prettier --config ./.prettierrc.yaml --check \"**/*.{js,json,md,sol,ts}\"",
     "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
