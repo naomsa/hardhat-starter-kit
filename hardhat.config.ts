@@ -12,11 +12,11 @@ dotenv.config();
 const config: HardhatUserConfig = {
   solidity: "0.8.15",
   networks: {
-    rinkeby: {
-      url: process.env.RPC_URL_RINKEBY || "",
+    sepolia: {
+      url: process.env.RPC_URL_SEPOLIA || "",
       accounts:
-        process.env.PRIVATE_KEY_RINKEBY !== undefined
-          ? [process.env.PRIVATE_KEY_RINKEBY]
+        process.env.PRIVATE_KEY_SEPOLIA !== undefined
+          ? [process.env.PRIVATE_KEY_SEPOLIA]
           : [],
     },
     mainnet: {
