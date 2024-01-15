@@ -2,3 +2,8 @@ endOfLine: auto
 singleQuote: false
 tabWidth: 2
 trailingComma: all
+overrides:
+- files: "*.sol"
+  options:
+    printWidth: 120
+    tabWidth: 2

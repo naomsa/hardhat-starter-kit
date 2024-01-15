@@ -7,17 +7,24 @@ import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
-import "./tasks/accounts";
-
 dotenv.config();
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.10",
+  solidity: "0.8.11",
   networks: {
     rinkeby: {
-      url: process.env.RPC_URL || "",
+      url: process.env.RPC_URL_RINKEBY || "",
       accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+        process.env.PRIVATE_KEY_RINKEBY !== undefined
+          ? [process.env.PRIVATE_KEY_RINKEBY]
+          : [],
+    },
+    mainnet: {
+      url: process.env.RPC_URL_MAINNET || "",
+      accounts:
+        process.env.PRIVATE_KEY_MAINNET !== undefined
+          ? [process.env.PRIVATE_KEY_MAINNET]
+          : [],
     },
   },
   gasReporter: {
