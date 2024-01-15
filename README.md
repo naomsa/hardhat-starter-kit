@@ -1,51 +1,53 @@
 # ☀ Advanced Solidity Starter Kit
 
-This is an advanced and kinda complex template I did in order to make it easier to start a solidity project. You can just click on **use this template** and start building your project 😀.
+## ✏ Instrutions
 
-# 👨‍💻 Scripts
+You can just click on **use this template** and start building your project 😀.
 
-## test
+## 👨‍💻 Scripts
+
+### test
 
 >`yarn test`
 Run all tests specified on the test/ folder.
 
-## build
+### build
 
 >`yarn build`
 Generate all artifacts and types in order to build/deploy upon your project.
 
-## lint
+### lint
 
 >`yarn lint`
 Fix all code issues on your contracts and scripts.
 
-## prettier
+### prettier
 
 >`yarn prettier`
 Fix the whole style of your codebase.
 
-## clean
+### clean
 
 >`yarn clean`
 Remove all build directories, preparing for another compiling.
 
 
-# Folder Structure
+## Folder Structure
 This template uses the root folder as the base path and contains folders such as **contracts**, **test** and **tasks** to speed up your performance and development.
 
-## 📘 contracts/
+### 📘 contracts/
 
 This is where you should put all your **.sol** files.
 
-## 🧪 test/
+### 🧪 test/
 
 This is where you should put all your test files.
 
-## ⏰ tasks/
+### ⏰ tasks/
 
 This is where all hardhat tasks live. They run scripts throught the command line with argument input.
 
-# 👛 Address for donations
+## 👛 Address for donations
 
 Feel free to leave me a tip in any token like ETH, BNB, AVAX and FTM.
 > 0x9E5d22a7Be252c01Eebd4a4568e2D644ac1ee5c6
