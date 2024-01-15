@@ -13,7 +13,8 @@
     "build": "cross-env TS_NODE_TRANSPILE_ONLY=1 yarn clean && hardhat compile",
     "deploy:greeter": "hardhat deploy:greeter",
     "prettier": "prettier --config ./.prettierrc.yaml --write \"**/*.{js,json,md,sol,ts}\"",
-    "lint": "yarn lint:sol && yarn lint:ts",
+    "prettier:check": "prettier --config ./.prettierrc.yaml --check \"**/*.{js,json,md,sol,ts}\"",
+    "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
     "lint:sol": "solhint \"contracts/**/*.sol\"",
     "lint:ts": "eslint --ext .js,.ts .",
     "postinstall": "husky install"
