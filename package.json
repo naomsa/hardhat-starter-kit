@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "cross-env TS_NODE_TRANSPILE_ONLY=1 REPORT_GAS=1 hardhat test test/index.ts",
+    "test": "cross-env TS_NODE_TRANSPILE_ONLY=1 hardhat test test/index.ts",
     "benchmark": "cross-env TS_NODE_TRANSPILE_ONLY=1 REPORT_GAS=1 hardhat test test/benchmark.ts",
     "clean": "rimraf artifacts/ cache/ coverage/ typechain/ coverage.json",
     "build": "cross-env TS_NODE_TRANSPILE_ONLY=1 yarn clean && hardhat compile",
