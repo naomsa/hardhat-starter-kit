@@ -10,7 +10,7 @@ import "solidity-coverage";
 dotenv.config();
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.11",
+  solidity: "0.8.15",
   networks: {
     rinkeby: {
       url: process.env.RPC_URL_RINKEBY || "",
