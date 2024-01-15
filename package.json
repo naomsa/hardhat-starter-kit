@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "test": "cross-env TS_NODE_TRANSPILE_ONLY=1 hardhat test test/index.ts",
     "benchmark": "cross-env TS_NODE_TRANSPILE_ONLY=1 REPORT_GAS=1 hardhat test test/benchmark.ts",
@@ -11,7 +12,7 @@
     "deploy": "hardhat run scripts/deploy.ts",
     "format": "prettier --config ./.prettierrc.yaml --write \"**/*.{js,json,md,sol,ts}\"",
     "format:check": "prettier --config ./.prettierrc.yaml --check \"**/*.{js,json,md,sol,ts}\"",
-    "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
+    "lint": "yarn run lint:sol && yarn run lint:ts && yarn run format:check",
     "lint:sol": "solhint \"contracts/**/*.sol\"",
     "lint:ts": "eslint --ext .js,.ts ."
   },
