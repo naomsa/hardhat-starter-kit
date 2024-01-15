@@ -1,8 +1,9 @@
 tasks:
   - name: Initialize
-    init: >
+    before: >
       yarn &&
       gp sync-done install
+    init: yarn build
     command: yarn hardhat node
   - name: Deploy
     init: gp sync-await install
