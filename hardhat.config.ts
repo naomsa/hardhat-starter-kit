@@ -8,9 +8,6 @@ dotenv.config();
 
 const config: HardhatUserConfig = {
   solidity: "0.8.15",
-  paths: {
-    tests: "./tests",
-  },
   networks: {
     sepolia: {
       url: process.env.RPC_URL_SEPOLIA || "",
