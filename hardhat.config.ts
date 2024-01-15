@@ -2,6 +2,7 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@primitivefi/hardhat-dodoc";
 import "hardhat-watcher";
+import "hardhat-deploy";
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -50,6 +51,9 @@ const config: HardhatUserConfig = {
   dodoc: {
     runOnCompile: false,
     exclude: ["./contracts/mocks"],
+  },
+  namedAccounts: {
+    deployer: 0,
   },
 };
 
