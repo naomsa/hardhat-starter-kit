@@ -12,7 +12,7 @@ import "./tasks";
 dotenv.config();
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.9",
+  solidity: "0.8.10",
   networks: {
     rinkeby: {
       url: process.env.RPC_URL || "",
