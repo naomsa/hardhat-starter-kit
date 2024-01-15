@@ -9,3 +9,5 @@ cache
 artifacts
 docs
 deployments
+
+.DS_Store
