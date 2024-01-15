@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "@primitivefi/hardhat-dodoc";
 import "hardhat-watcher";
 import * as dotenv from "dotenv";
 
@@ -30,6 +31,9 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
+  typechain: {
+    outDir: "typechain",
+  },
   watcher: {
     ci: {
       tasks: [
@@ -42,6 +46,10 @@ const config: HardhatUserConfig = {
       ],
       files: ["./contracts", "./test"],
     },
+  },
+  dodoc: {
+    runOnCompile: false,
+    exclude: ["./contracts/mocks"],
   },
 };
 
