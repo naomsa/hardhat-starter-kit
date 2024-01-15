@@ -1,6 +1,5 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@primitivefi/hardhat-dodoc";
 import "hardhat-watcher";
 import "hardhat-deploy";
 import * as dotenv from "dotenv";
@@ -30,6 +29,7 @@ const config: HardhatUserConfig = {
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
+
     currency: "USD",
   },
   etherscan: {
@@ -50,10 +50,6 @@ const config: HardhatUserConfig = {
       ],
       files: ["./contracts", "./test"],
     },
-  },
-  dodoc: {
-    runOnCompile: false,
-    exclude: ["./contracts/mocks"],
   },
   namedAccounts: {
     deployer: 0,
