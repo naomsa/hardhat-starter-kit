@@ -17,12 +17,12 @@ describe("Greeter", () => {
     expect(await contract.greeting()).to.equal("Hello, world!");
 
     await contract.setGreeting("Hola, mundo!");
-    expect(await contract.greeting()).to.equal("Hello, world!");
+    expect(await contract.greeting()).to.equal("Hola, mundo!");
   });
 
   it("Should emit the Greet event once greet() is called", async () => {
     const contract = await loadFixture(deployContracts);
 
-    expect(await contract.greet()).to.emit(contract, "Greet");
+    await expect(await contract.greet()).to.emit(contract, "Greet");
   });
 });
