@@ -1,4 +1,4 @@
-# 🎎 Solidity Starter Kit
+# 🎎 Hardhat Starter Kit
 
 ## 🎫 Instrutions
 
