@@ -1,0 +1,18 @@
+tasks:
+  - name: Initialize
+    init: >
+      yarn &&
+      gp sync-done install
+    command: yarn hardhat node
+  - name: Deploy
+    init: gp sync-await install
+    command: yarn deploy
+    openMode: split-right
+ports:
+  - port: 8545
+    onOpen: ignore
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
+    - juanblanco.solidity
