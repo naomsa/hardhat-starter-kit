@@ -7,7 +7,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.15",
+  solidity: "0.8.19",
   networks: {
     goerli: {
       url: process.env.RPC_URL_GOERLI || "",
