@@ -1,46 +1,51 @@
-# Advanced Sample Hardhat Project
+# ☀ Advanced Solidity Starter Kit
 
-This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
+This is an advanced and kinda complex template I did in order to make it easier to start a solidity project. You can just click on **use this template** and start building your project 😀.
 
-The project comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts. It also comes with a variety of other tools, preconfigured to work with the project code.
+# 👨‍💻 Scripts
 
-Try running some of the following tasks:
+## test
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-npx hardhat help
-REPORT_GAS=true npx hardhat test
-npx hardhat coverage
-npx hardhat run scripts/deploy.ts
-TS_NODE_FILES=true npx ts-node scripts/deploy.ts
-npx eslint '**/*.{js,ts}'
-npx eslint '**/*.{js,ts}' --fix
-npx prettier '**/*.{json,sol,md}' --check
-npx prettier '**/*.{json,sol,md}' --write
-npx solhint 'contracts/**/*.sol'
-npx solhint 'contracts/**/*.sol' --fix
-```
+>`yarn test`
+Run all tests specified on the test/ folder.
 
-# Etherscan verification
+## build
 
-To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
+>`yarn build`
+Generate all artifacts and types in order to build/deploy upon your project.
 
-In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
+## lint
 
-```shell
-hardhat run --network ropsten scripts/sample-script.ts
-```
+>`yarn lint`
+Fix all code issues on your contracts and scripts.
 
-Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
+## prettier
 
-```shell
-npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
-```
+>`yarn prettier`
+Fix the whole style of your codebase.
 
-# Performance optimizations
+## clean
 
-For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable `TS_NODE_TRANSPILE_ONLY` to `1` in hardhat's environment. For more details see [the documentation](https://hardhat.org/guides/typescript.html#performance-optimizations).
+>`yarn clean`
+Remove all build directories, preparing for another compiling.
+
+
+# Folder Structure
+This template uses the root folder as the base path and contains folders such as **contracts**, **test** and **tasks** to speed up your performance and development.
+
+## 📘 contracts/
+
+This is where you should put all your **.sol** files.
+
+## 🧪 test/
+
+This is where you should put all your test files.
+
+## ⏰ tasks/
+
+This is where all hardhat tasks live. They run scripts throught the command line with argument input.
+
+# 👛 Address for donations
+
+Feel free to leave me a tip in any token like ETH, BNB, AVAX and FTM.
+> 0x9E5d22a7Be252c01Eebd4a4568e2D644ac1ee5c6
