@@ -2,7 +2,7 @@
 
 ## ✏ Instrutions
 
-You can just click on **use this template** and start building your project 😀.
+Just click on the green **use this template** button on the top bar and start building your project 😀.
 
 ## 👨‍💻 Scripts
 
